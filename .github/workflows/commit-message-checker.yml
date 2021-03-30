@@ -1,0 +1,22 @@
+name: "Commit Message Check"
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+  push:
+    branches:
+      - main
+      - "releases/*"
+jobs:
+  check-commit-message:
+    name: Check Commit Message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for commit-message-title
+        uses: gsactions/commit-message-checker@v1
+        with:
+          pattern: '^(feat|fix|docs|style|refactor|test|chore):\s.+$'
+          error: 'Enter commit message like "feat|fix|docs|style|refactor|test|chore: <commit message>"'
