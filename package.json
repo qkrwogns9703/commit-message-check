@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/qkrwogns9703/commit-message-check/issues"
   },
-  "homepage": "https://github.com/qkrwogns9703/commit-message-check#readme"
+  "homepage": "https://github.com/qkrwogns9703/commit-message-check#readme",
+  "husky" : {
+     "hooks" : {
+       "commit-msg" : "echo $HUSKY_GIT_PARAMS"
+    }
+  }
+  
 }
