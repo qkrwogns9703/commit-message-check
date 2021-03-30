@@ -1,0 +1,25 @@
+{
+  "name": "commit-message-check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "husky": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qkrwogns9703/commit-message-check.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qkrwogns9703/commit-message-check/issues"
+  },
+  "homepage": "https://github.com/qkrwogns9703/commit-message-check#readme"
+}
