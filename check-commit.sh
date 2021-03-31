@@ -3,6 +3,7 @@ COMMIT_MSG="$(cat $MSG_FILE)"
 # Initialize constants here
 export REGEX='^(feat|fix|docs|style|refactor|test|chore):*.+$'
 export ERROR_MSG="커밋 메세지를 컨벤션에 맞게 작성해주세요."
+echo "commit"
 if [[ $COMMIT_MSG =~ $REGEX ]]; then
   exit 0
 else
