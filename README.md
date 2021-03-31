@@ -1,9 +1,3 @@
 # commit message checker test
 
-# ddd
-
-# ddd
-
-# dd
-
-# dd
+# test1
